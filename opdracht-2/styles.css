@@ -9,33 +9,67 @@ div {
 }
 
 .one {
-    flex-direction: column;
     justify-content: end;
+    flex-flow: column wrap;
 }
 
 .two {
     justify-content: space-between;
 }
 
+/*Exercise 2.3*/
 .three {
+    display: flex;
     justify-content: space-between;
 }
 
 .three ul {
-    flex-grow: 1;
     display: flex;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    flex: 1;
     list-style: none;
-    justify-content: space-evenly;
-
-
 }
 
 .three li {
+    align-items:start;
     justify-content: space-evenly;
 }
 
 .three div {
-    flex-grow: 3;
+    flex: 3;
     justify-content: end;
-    align-content: center;
+
+    align-items: center;
+}
+
+/*Exercise 2.4*/
+
+.four {
+    justify-content: center;
+}
+
+form {
+    flex-flow: column wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Exercise 2.5*/
+.five {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-evenly;*/
+}
+
+.new {
+    flex: 1 1 40%;
+}
+
+
+@media (min-width: 1200px) {
+    .new {
+        flex: 1 1 30%;
+    }
 }
