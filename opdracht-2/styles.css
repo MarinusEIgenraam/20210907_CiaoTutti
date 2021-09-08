@@ -3,3 +3,39 @@
 ========================================================= */
 
 /* Schrijf hier  jouw CSS! */
+
+div {
+    display: flex;
+}
+
+.one {
+    flex-direction: column;
+    justify-content: end;
+}
+
+.two {
+    justify-content: space-between;
+}
+
+.three {
+    justify-content: space-between;
+}
+
+.three ul {
+    flex-grow: 1;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+
+
+}
+
+.three li {
+    justify-content: space-evenly;
+}
+
+.three div {
+    flex-grow: 3;
+    justify-content: end;
+    align-content: center;
+}
