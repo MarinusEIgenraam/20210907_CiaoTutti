@@ -7,12 +7,13 @@
 div {
     display: flex;
 }
-
+/*Exercise 2.1*/
 .one {
     justify-content: end;
     flex-flow: column wrap;
 }
 
+/*Exercise 2.2*/
 .two {
     justify-content: space-between;
 }
@@ -20,7 +21,7 @@ div {
 /*Exercise 2.3*/
 .three {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .three ul {
@@ -32,15 +33,15 @@ div {
 }
 
 .three li {
-    align-items:start;
-    justify-content: space-evenly;
+    /*align-items:start;*/
+    /*justify-content: space-evenly;*/
 }
 
 .three div {
     flex: 3;
     justify-content: end;
 
-    align-items: center;
+    /*align-items: center;*/
 }
 
 /*Exercise 2.4*/
@@ -50,26 +51,28 @@ div {
 }
 
 form {
-    flex-flow: column wrap;
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
+    flex-flow: column wrap;
+    align-content: center;
 }
 
 /*Exercise 2.5*/
 .five {
-    flex-direction: row;
+    /*flex-direction: row;*/
     flex-wrap: wrap;
     /*justify-content: space-evenly;*/
 }
 
-.new {
+article {
     flex: 1 1 40%;
 }
 
 
 @media (min-width: 1200px) {
-    .new {
+    article {
         flex: 1 1 30%;
     }
 }
